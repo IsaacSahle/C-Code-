@@ -1,0 +1,31 @@
+/*
+ ============================================================================
+ File Name   : V00816592A2P1.c
+ Author      : Isaac Sahle
+ Assignment Name : Assignment 2
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+void power() {
+	int x, y, z;
+	for(x = 0; x < 10; x++) {
+		z = 1;
+
+	for(y = 0; y < x; y++) {
+		z = z * 3;
+	}
+	printf("%5d %d %.9f\n", z, x, 1.0/z);
+}
+
+
+}
+
+int main(void) {
+	power();
+
+	return EXIT_SUCCESS;
+}

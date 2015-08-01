@@ -1,0 +1,83 @@
+/*
+ ============================================================================
+ File Name   : V00816592A2P1.c
+ Author      : Isaac Sahle
+ Assignment Name : Assignment 2
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <assert.h>
+#include <math.h>
+
+void Arithmetic_Sequence1() {
+	int j;
+	printf("Arithmetic Sequence: ");
+	for(j = 8; j<=118;j = j + 11 ) {
+		printf("%d ",j);
+	}
+	printf("\n\n");
+}
+
+void Arithmetic_Sequence2() {
+	int i;
+	printf("Arithmetic Sequence: ");
+	for(i = 35; i>=-35; i = i - 7) {
+		printf("%d ", i);
+	}
+	printf("\n\n");
+}
+
+void Harmonic_Sequence() {
+	float x;
+	float recip;
+	x = 1.00;
+	recip = 1.00;
+
+	printf("Harmonic Sequence:");
+
+	while (x <= 10) {
+			recip = 1/x;
+			printf("%.2f ",recip);
+			x++;
+		}
+		printf("\n\n");
+}
+
+void Leonardo_Sequence(){
+	int f, i;
+	int x, y;
+
+	for(f = 0; f <= 11 ; f++){
+
+		if( f==0){
+			printf("Leonardo Sequence: 9 ");
+			x = 9;
+		}
+		else if( f==1) {
+			printf("15 ");
+		    y = x;
+			x = 15;
+			}
+		else {
+			i = x + y + 1;
+			printf("%d ",i);
+			y = x;
+			x = i;
+		}
+
+		}
+	}
+
+int main(void) {
+	//
+	Arithmetic_Sequence1();
+	Arithmetic_Sequence2();
+	Harmonic_Sequence();
+	Leonardo_Sequence();
+	printf("\n");
+
+	return EXIT_SUCCESS;
+}/*main*/

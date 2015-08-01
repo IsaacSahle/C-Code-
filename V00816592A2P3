@@ -1,0 +1,34 @@
+/*
+ ============================================================================
+ File Name   : V00816592A2P1.c
+ Author      : Isaac Sahle
+ Assignment Name : Assignment 2
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+void Fuel() {
+
+	float LPM, MPG;
+
+	printf("Litres        Miles\n");
+	printf("per           per\n");
+	printf("100 KM        Gallon\n");
+
+	for(LPM = 4.0; LPM<= 8.0; LPM = LPM + 0.1) {
+
+		MPG = LPM/100/0.621371 * 0.219969;
+		printf("%.1f           %.1f\n",LPM, 1/MPG);
+
+	}
+}
+
+
+int main(void) {
+	Fuel();
+
+	return EXIT_SUCCESS;
+}
